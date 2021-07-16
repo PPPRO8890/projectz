@@ -1,0 +1,463 @@
+@font-face {
+  font-family: "AvertaStd-Semibold";
+  src: url("//db.onlinewebfonts.com/t/aef2da2daa6e15be44ff1a2706cc61a1.eot");
+  src: url("//db.onlinewebfonts.com/t/aef2da2daa6e15be44ff1a2706cc61a1.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/aef2da2daa6e15be44ff1a2706cc61a1.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/aef2da2daa6e15be44ff1a2706cc61a1.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/aef2da2daa6e15be44ff1a2706cc61a1.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/aef2da2daa6e15be44ff1a2706cc61a1.svg#AvertaStd-Semibold")
+      format("svg");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+.LeftNavBarBox {
+  background: #0759e4;
+  width: fit-content;
+
+  text-align: center;
+}
+
+.ArrayMiddileTopIcons {
+  padding: 12px 5px 0px 5px;
+}
+
+.TopIcon {
+  position: fixed;
+  color: #fff;
+  margin: 15px 0 40px 0px;
+  height: 33px;
+  width: 33px;
+  cursor: pointer;
+  left:27px;
+  top:-1px
+}
+
+.MiddleIcons {
+  position: fixed;
+  left: 28px;
+  color: #fff;
+  height: 35px;
+  width: 28px;
+  cursor: pointer;
+}
+
+.DashboardIcon {
+ 
+  height: 40px;
+  width: 70px;
+  padding: 10px 0px 55px 0px;
+  margin: 0 auto;
+}
+.DashboardIcon:hover {
+  background: #4a82e2;
+  border-radius: 10px;
+}
+
+.UserIcon {
+  height: 40px;
+  width: 70px;
+  padding: 10px 0px 55px 0px;
+  margin: 0 auto;
+}
+.UserIcon:hover {
+  background: #4a82e2;
+  border-radius: 10px;
+}
+
+.MasterIcon {
+  height: 40px;
+  width: 70px;
+  padding: 10px 0px 55px 0px;
+  margin: 0 auto;
+}
+.MasterIcon:hover {
+  background: #4a82e2;
+  border-radius: 10px;
+}
+
+.DashboardIcon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "Dashboard";
+}
+.UserIcon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "User";
+}
+.MasterIcon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "Master";
+}
+
+.ArrayDownIcons {
+  margin-top: calc(100vh - 550px);
+  border-top: 1px solid #ffffff;
+}
+
+.DownIcons {
+  color: #fff;
+  height: 40px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.SettingIcon {
+  height: 40px;
+  width: 70px;
+  padding: 10px 0px 55px 0px;
+  margin: 25px auto 0px auto;
+}
+.SettingIcon:hover {
+  background: #4a82e2;
+  border-radius: 10px;
+}
+
+.HelpIcon {
+  height: 40px;
+  width: 70px;
+  padding: 10px 0px 55px 0px;
+  margin: 0 auto;
+}
+.HelpIcon:hover {
+  background: #4a82e2;
+  border-radius: 10px;
+}
+
+.LogoutIcon {
+  height: 40px;
+  width: 70px;
+  padding: 10px 0px 55px 0px;
+  margin: 0 auto;
+}
+.LogoutIcon:hover {
+  background: #4a82e2;
+  border-radius: 10px;
+}
+
+.SettingIcon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "Setting";
+}
+.HelpIcon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "Help";
+}
+.LogoutIcon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "Log Out";
+}
+
+.dropDowns {
+  background: #4a82e2;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+ 
+  margin: 5px 0px 5px 10px;
+}
+
+.userinnericons {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 4px 0;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  
+}
+
+.userinnericons:hover {
+  color: #fff;
+}
+
+
+.InnerIconsName1{
+  padding-left: 20px;
+  text-align: inherit;
+  font-family: AvertaStd-Semibold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  
+  color: rgba(255, 255, 255, 0.75);
+}
+.InnerIconsName2{
+  padding-left: 20px;
+  text-align: inherit;
+  font-family: AvertaStd-Semibold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+margin-right: 6px;  
+  color: rgba(255, 255, 255, 0.75);
+}
+.InnerIconsName3{
+  position: relative;
+  left: 15px;
+  padding-left: 5px;
+  text-align: none;
+  font-family: AvertaStd-Semibold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+margin-right: px;  
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.i4{
+  padding-left:35px ;
+}
+.InnerIconsName4{
+ 
+
+  font-family: AvertaStd-Semibold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+ margin-left: 20px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.i5{
+  padding-left: 15px;
+}
+.InnerIconsName5{
+ 
+  
+  text-align: inherit;
+  font-family: AvertaStd-Semibold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+padding-left: 25px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+.Usermastericon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "User Master";
+}
+
+.Usergroupicon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "User Group Master";
+}
+.Userlogicon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "User Logreport";
+}
+.Changepasswordicon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "Change Password";
+}
+.Resetpasswordicon:hover::after {
+  position: absolute;
+  margin-left: 30px;
+  background: #ffffff;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 100px;
+  font-family: AvertaStd-Semibold;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.51);
+  content: "Reset password";
+}
+
+.Logo{
+  display: inherit;
+ position: relative;
+ left: 10px;
+ top: -7px;
+ padding-left: 80px;
+ padding-right: 40px;
+}
+.MiddleIconName
+{
+  font-family: AvertaStd-Semibold;
+font-size: 16px;
+line-height: 40px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+.name1{ 
+padding-left: 14px;
+
+}
+.name3{
+  padding-left: 13px;
+  
+  }
+/* .Usermastericon{
+  
+
+  padding-right: 3px;
+}
+.Usergroupicon{
+ 
+
+  padding-right: 10px;
+}
+.Userlogicon{
+ 
+
+  padding-left: 15px;
+}
+.Changepasswordicon{
+ 
+
+  padding-left: 29px;
+}
+.Resetpasswordicon{
+  
+
+  padding-left: 8px;
+} */
